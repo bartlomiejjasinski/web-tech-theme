@@ -11,6 +11,7 @@ import cartPreview from './global/cart-preview';
 import privacyCookieNotification from './global/cookieNotification';
 import maintenanceMode from './global/maintenanceMode';
 import carousel from './common/carousel';
+import header from './common/header';
 import loadingProgressBar from './global/loading-progress-bar';
 import svgInjector from './global/svg-injector';
 import objectFitImages from './global/object-fit-polyfill';
@@ -30,5 +31,6 @@ export default class Global extends PageManager {
         loadingProgressBar();
         svgInjector();
         objectFitImages();
+        header();
     }
 }
